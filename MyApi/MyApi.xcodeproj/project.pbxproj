@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2680B423137D8F0062ECCE /* BluetoothTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2680B323137D8F0062ECCE /* BluetoothTool.swift */; };
 		5CC68D7723039C1F00A6AD3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68D7623039C1F00A6AD3C /* AppDelegate.swift */; };
 		5CC68D7923039C1F00A6AD3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68D7823039C1F00A6AD3C /* SceneDelegate.swift */; };
 		5CC68D7B23039C1F00A6AD3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68D7A23039C1F00A6AD3C /* ContentView.swift */; };
@@ -15,6 +16,8 @@
 		5CC68D8323039C2000A6AD3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC68D8123039C2000A6AD3C /* LaunchScreen.storyboard */; };
 		5CC68D8E23039C2000A6AD3C /* MyApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68D8D23039C2000A6AD3C /* MyApiTests.swift */; };
 		5CC68D9923039C2000A6AD3C /* MyApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68D9823039C2000A6AD3C /* MyApiUITests.swift */; };
+		5CC68DA823039CA400A6AD3C /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC68DA723039CA400A6AD3C /* StringExt.swift */; };
+		5CCDF8E2230E8C070093D86D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCDF8E1230E8C070093D86D /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C2680B323137D8F0062ECCE /* BluetoothTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTool.swift; sourceTree = "<group>"; };
 		5CC68D7323039C1F00A6AD3C /* MyApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC68D7623039C1F00A6AD3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC68D7823039C1F00A6AD3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		5CC68D9423039C2000A6AD3C /* MyApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC68D9823039C2000A6AD3C /* MyApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiUITests.swift; sourceTree = "<group>"; };
 		5CC68D9A23039C2000A6AD3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC68DA723039CA400A6AD3C /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		5CCDF8E1230E8C070093D86D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC5AED1230AB1320041676B /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				5CC68DA723039CA400A6AD3C /* StringExt.swift */,
+			);
+			path = extention;
+			sourceTree = "<group>";
+		};
+		5CC5AED2230AB1420041676B /* function */ = {
+			isa = PBXGroup;
+			children = (
+				5CCDF8E1230E8C070093D86D /* Reachability.swift */,
+				5C2680B323137D8F0062ECCE /* BluetoothTool.swift */,
+			);
+			path = function;
+			sourceTree = "<group>";
+		};
 		5CC68D6A23039C1F00A6AD3C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +122,7 @@
 		5CC68D7523039C1F00A6AD3C /* MyApi */ = {
 			isa = PBXGroup;
 			children = (
+				5CC68DA623039C8D00A6AD3C /* Api */,
 				5CC68D7623039C1F00A6AD3C /* AppDelegate.swift */,
 				5CC68D7823039C1F00A6AD3C /* SceneDelegate.swift */,
 				5CC68D7A23039C1F00A6AD3C /* ContentView.swift */,
@@ -134,6 +158,15 @@
 				5CC68D9A23039C2000A6AD3C /* Info.plist */,
 			);
 			path = MyApiUITests;
+			sourceTree = "<group>";
+		};
+		5CC68DA623039C8D00A6AD3C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5AED2230AB1420041676B /* function */,
+				5CC5AED1230AB1320041676B /* extention */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +302,9 @@
 			files = (
 				5CC68D7723039C1F00A6AD3C /* AppDelegate.swift in Sources */,
 				5CC68D7923039C1F00A6AD3C /* SceneDelegate.swift in Sources */,
+				5C2680B423137D8F0062ECCE /* BluetoothTool.swift in Sources */,
+				5CC68DA823039CA400A6AD3C /* StringExt.swift in Sources */,
+				5CCDF8E2230E8C070093D86D /* Reachability.swift in Sources */,
 				5CC68D7B23039C1F00A6AD3C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
